@@ -1,4 +1,5 @@
 import TopNav from "./top_nav";
+import FmWidget from "../widgets/fm_widget";
 import { Outfit, Ubuntu } from "next/font/google";
 
 import Link from "next/link";
@@ -17,9 +18,11 @@ export default function MainLayout({ children }) {
           <h1 className={`${ubuntubold.className}  text-4xl`}>khold.world</h1>
         </Link>
       </header>
-      <div className={`${outfit.className} w-[900px] m-auto`}>
+      <div
+        className={`${outfit.className} w-[900px] m-auto border border-black`}
+      >
         <nav
-          className={`${ubuntubold.className}  bg-white border border-b-0 border-black text-black text-2xl`}
+          className={`${ubuntubold.className}  bg-white border border-black text-black text-2xl`}
         >
           <ul className="flex justify-between text-center ">
             <li className="flex-1 border-r border-black py-1 px-4 hover:bg-black hover:text-white">
@@ -39,9 +42,10 @@ export default function MainLayout({ children }) {
 
         <div className="flex bg-white">
           {/* New flex container */}
-          <aside className="w-52 border border-black p-4 text-black">
+          <aside className="w-64 px-2 py-3 text-black">
             {/* Sidebar content */}
-            Sidebar
+
+            <FmWidget />
           </aside>
           <div className="flex-1 ">
             {/* Main content */}
