@@ -36,7 +36,7 @@ export default function FmWidget() {
   }
 
   return (
-    <div className="border border-black p-1">
+    <div className="border border-black p-1 bg-white rounded-sm">
       <h3 className="border-b border-black">
         <strong className={`${bold.className} text-lg`}>
           recently listened

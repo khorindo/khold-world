@@ -14,37 +14,22 @@ export default function MainLayout({ children }) {
         {/* <TopNav /> */}
         {/* i dont like the old topnav. i think im going to put the nav ul into the "topnav" component
         and put that into the div below header where it already is */}
-        <Link href="#">
-          <h1 className={`${ubuntubold.className}  text-4xl`}>khold.world</h1>
+        {/* done! */}
+        <Link href="/">
+          <h1 className={`${ubuntubold.className}  text-4xl text-zinc-100`}>
+            khold.world
+          </h1>
         </Link>
       </header>
       <div
         className={`${outfit.className} w-[900px] m-auto border border-black`}
       >
-        <nav
-          className={`${ubuntubold.className}  bg-white border border-black text-black text-2xl`}
-        >
-          <ul className="flex justify-between text-center ">
-            <li className="flex-1 border-r border-black py-1 px-4 hover:bg-black hover:text-white">
-              <a href="#">home</a>
-            </li>
-            <li className="flex-1  border-black p-1 px-4 hover:bg-black hover:text-white">
-              <a href="#">about</a>
-            </li>
-            <li className="flex-1  border-l border-black py-1 px-4 hover:bg-black hover:text-white">
-              <a href="#">blog</a>
-            </li>
-            <li className="flex-1  border-l border-black py-1 px-4 hover:bg-black hover:text-white">
-              <a href="#">fun</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div className="flex bg-white">
+        {/* topnav here now */}
+        <TopNav />
+        <div className="flex bg-zinc-800">
           {/* New flex container */}
-          <aside className="w-64 px-2 py-3 text-black">
+          <aside className="w-64 px-2 py-3 text-zinc-800">
             {/* Sidebar content */}
-
             <FmWidget />
           </aside>
           <div className="flex-1 ">
@@ -53,7 +38,11 @@ export default function MainLayout({ children }) {
           </div>
         </div>
       </div>
-      <footer></footer>
+      <footer>
+        <div className={`${outfit.className} text-center m-2`}>
+          © 2024 khold.world
+        </div>
+      </footer>
     </main>
   );
 }

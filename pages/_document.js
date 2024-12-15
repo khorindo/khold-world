@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body
-        className="antialiased bg-cover bg-center bg-fixed min-h-screen"
+        className="antialiased bg-cover bg-center bg-fixed min-h-screen relative"
         style={{ backgroundImage: `url(/images/flower.png)` }}
       >
         <Main />
