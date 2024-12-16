@@ -1,6 +1,8 @@
 import TopNav from "./top_nav";
 import FmWidget from "../widgets/fm_widget";
-import { Outfit, Ubuntu } from "next/font/google";
+import NavLinkAds from "../widgets/navlink_ads";
+
+import { Outfit, Ubuntu, Outfit } from "next/font/google";
 
 import Link from "next/link";
 
@@ -22,7 +24,7 @@ export default function MainLayout({ children }) {
         </Link>
       </header>
       <div
-        className={`${outfit.className} w-[900px] m-auto border border-black`}
+        className={` ${outfit.className} w-[900px] m-auto border border-black`}
       >
         {/* topnav here now */}
         <TopNav />
@@ -31,6 +33,7 @@ export default function MainLayout({ children }) {
           <aside className="w-64 px-2 py-3 text-zinc-800">
             {/* Sidebar content */}
             <FmWidget />
+            <NavLinkAds />
           </aside>
           <div className="flex-1 ">
             {/* Main content */}

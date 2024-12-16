@@ -1,4 +1,4 @@
-import { Ubuntu, Outfit } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 
 import Link from "next/link";
 
