@@ -9,6 +9,7 @@ import {
 // my components
 import LinkBox from "./linkbox";
 import Changelog from "./changelog";
+import Webrings from "./webrings";
 
 export default function HomeAccordion() {
   return (
@@ -33,7 +34,9 @@ export default function HomeAccordion() {
       </AccordionItem>
       <AccordionItem value="item-4">
         <AccordionTrigger className="font-bold">webrings</AccordionTrigger>
-        <AccordionContent>will be here</AccordionContent>
+        <AccordionContent>
+          <Webrings />
+        </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
         <AccordionTrigger className="font-bold">guestbook</AccordionTrigger>
