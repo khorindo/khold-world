@@ -54,7 +54,7 @@ export default function FmWidget() {
             />
           </Link>
         )}
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-1">
           <Link
             href={latestTrack.url}
             className="hover:decoration-solid hover:underline"
@@ -63,7 +63,7 @@ export default function FmWidget() {
               {latestTrack.trackName}
             </p>
           </Link>
-          <p className="text-sm">{latestTrack.artist}</p>
+          <p className="text-sm italic">{latestTrack.artist}</p>
           <p className="text-sm">{latestTrack.album}</p>
           {/* <Link href={latestTrack.artisturl}>
             <p className="text-sm">{latestTrack.artist}</p>

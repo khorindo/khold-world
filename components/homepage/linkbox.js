@@ -20,7 +20,7 @@ export default function LinkBox() {
         <DialogTrigger>
           <Image src="/icons/twt.png" width={30} height={30}></Image>
         </DialogTrigger>
-        <DialogContent className="bg-zinc-900 border-zinc-600 ">
+        <DialogContent className="bg-zinc-950 border-zinc-600 ">
           <DialogHeader>
             <DialogTitle>h</DialogTitle>
             <DialogDescription className="text-zinc-200">

@@ -1,3 +1,4 @@
+// shadcn
 import {
   Accordion,
   AccordionContent,
@@ -5,7 +6,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// my components
 import LinkBox from "./linkbox";
+import Changelog from "./changelog";
 
 export default function HomeAccordion() {
   return (
@@ -17,8 +20,10 @@ export default function HomeAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger className="font-bold">guestbook</AccordionTrigger>
-        <AccordionContent>will go here</AccordionContent>
+        <AccordionTrigger className="font-bold">changelog</AccordionTrigger>
+        <AccordionContent>
+          <Changelog />
+        </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
         <AccordionTrigger className="font-bold">
@@ -29,6 +34,10 @@ export default function HomeAccordion() {
       <AccordionItem value="item-4">
         <AccordionTrigger className="font-bold">webrings</AccordionTrigger>
         <AccordionContent>will be here</AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-5">
+        <AccordionTrigger className="font-bold">guestbook</AccordionTrigger>
+        <AccordionContent>will go here</AccordionContent>
       </AccordionItem>
     </Accordion>
   );

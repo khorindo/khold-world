@@ -28,7 +28,7 @@ export default function MainLayout({ children }) {
       >
         {/* topnav here now */}
         <TopNav />
-        <div className="flex bg-zinc-800">
+        <div className="flex bg-zinc-800 border-b rounded-sm border-zinc-800">
           {/* New flex container */}
           <aside className="w-64 px-2 py-3 text-zinc-800">
             {/* Sidebar content */}
