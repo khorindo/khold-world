@@ -26,11 +26,8 @@ export default function Home() {
             <div>
               Welcome to my website!! I'm{" "}
               <span className="font-bold">khold</span>{" "}
-              <span className="italic">(read: "cold")</span> I hear "kay-hold" a
-              lot but I think its funny so I don't mind. I code, mostly web dev,
-              I draw (very casually) and I spend too much time on twitter. I
-              wrote this website on Next.js and tailwindcss because they are
-              comfy.
+              <span className="italic">(read: "cold")</span> but honestly I hear
+              "kay-hold" just as much and I like it too.
             </div>
           </div>
           <div className="flex-shrink-0">
@@ -45,10 +42,13 @@ export default function Home() {
         </div>
         {/* 2nd para */}
         <div className="mb-2">
-          There's a lot of unfinished stuff right now, but I just wanted to at
-          least get the homepage up so I could get this on the internet. There's
-          a lot I want to write for this website so please watch warmly!!!
+          I built this website on next.js and tailwind because I think they're
+          comfy. There's a lot of unfinished stuff right now, but I'm happy with
+          putting this homepage up while I build the rest. I also have plenty to
+          yap about as soon as I get the blog up (even if noone's gonna read it
+          lol)
         </div>
+        <div>please watch warmly!!!</div>
 
         {/* the accordion is nicer */}
         <HomeAccordion />
