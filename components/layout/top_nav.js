@@ -1,24 +1,28 @@
-import { Ubuntu, Outfit } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 
 import Link from "next/link";
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["700"] });
-const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
+const ubuntubold = Ubuntu({ subsets: ["latin"], weight: ["700"] });
 
 export default function TopNav() {
   return (
-    <div className="flex items-center justify-around m-6">
-      <Link href="/">
-        <h1 className={`${ubuntu.className}  text-4xl`}>khold world</h1>
-      </Link>
-      <ul className={`${outfit.className} flex md:text-xl items-center`}>
-        <li className="m-2">
-          <Link href="/about">About</Link>
+    <nav
+      className={`${ubuntubold.className}  bg-zinc-950 border border-black text-zinc-200 text-2xl`}
+    >
+      <ul className="flex justify-between text-center ">
+        <li className="flex-1 border-r border-black py-1 px-4 hover:bg-zinc-200 hover:text-zinc-950">
+          <Link href="/">home</Link>
         </li>
-        <li className="m-2">
-          <Link href="/projects">Projects</Link>
+        <li className="flex-1  border-black p-1 px-4 hover:bg-black hover:bg-zinc-200 hover:text-zinc-950">
+          <Link href="#">about</Link>
+        </li>
+        <li className="flex-1  border-l border-black py-1 px-4 hover:bg-zinc-200 hover:text-zinc-950">
+          <Link href="#">blog</Link>
+        </li>
+        <li className="flex-1  border-l border-black py-1 px-4 hover:bg-zinc-200 hover:text-zinc-950">
+          <Link href="#">fun</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
