@@ -3,11 +3,12 @@ import MainLayout from "@/components/layout/main_layout";
 import HomeAccordion from "@/components/homepage/home_accordion";
 
 // misc
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Outfit } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
 
 const ubuntubold = Ubuntu({ subsets: ["latin"], weight: ["700"] });
+const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
 export default function Home() {
   return (
     <MainLayout>
@@ -18,10 +19,14 @@ export default function Home() {
       <div className="bg-zinc-50 border border-black p-2.5 my-3 mr-2 text-zinc-800 rounded-sm">
         <div className="flex flex-wrap gap-4">
           <div className="flex-1 min-w-[200px]">
-            <h1 className={`${ubuntubold.className} text-3xl text-zinc-900`}>
-              it's a khold world...
+            <h1
+              className={`${ubuntubold.className} text-3xl text-zinc-50 bg-zinc-950 p-1 rounded-sm`}
+            >
+              it's a khold world...{" "}
+              <span className={`${outfit.className} text-sm`}>
+                (at least this is.)
+              </span>
             </h1>
-            <div>(at least this is.)</div>
             {/* 1st para */}
             <div>
               Welcome to my website!! I'm{" "}
@@ -33,7 +38,7 @@ export default function Home() {
           <div className="flex-shrink-0">
             <Image
               src="/images/khold.jpg"
-              alt="Description of image"
+              alt="nichijou coffee mug"
               width={100}
               height={100}
               className="rounded border-zinc-600 border"
