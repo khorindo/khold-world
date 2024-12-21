@@ -15,7 +15,7 @@ export default function Home() {
         <title>home @ khold.world</title>
       </Head>
       {/* i think this div should be in mainlayout around the {children} prop tbh */}
-      <div className="bg-zinc-50 border border-white p-2.5 my-3 mr-2 text-zinc-800 rounded-sm">
+      <div className="bg-zinc-50 border border-black p-2.5 my-3 mr-2 text-zinc-800 rounded-sm">
         <div className="flex flex-wrap gap-4">
           <div className="flex-1 min-w-[200px]">
             <h1 className={`${ubuntubold.className} text-3xl text-zinc-900`}>
