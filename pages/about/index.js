@@ -17,27 +17,25 @@ export default function About() {
       </Head>
       <div className="bg-zinc-50 border border-black p-2.5 my-3 mr-2 text-zinc-800  rounded-sm ">
         <h1
-          className={`${ubuntubold.className} text-3xl text-zinc-50 bg-zinc-950 p-1 rounded-sm rounded-b-none`}
+          className={`${ubuntubold.className} text-3xl text-zinc-50 bg-zinc-900 p-1 rounded-sm rounded-b-none `}
         >
           about me
         </h1>
         <Tabs defaultValue="bio" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 bg-zinc-700 rounded-none rounded-b-sm">
+          <TabsList className="grid w-full grid-cols-3 rounded-none rounded-b-sm border-t border-black">
             <TabsTrigger value="bio" className="">
               bio
             </TabsTrigger>
-            <TabsTrigger value="achievements" className="">
-              achievements
+            <TabsTrigger value="interests" className="">
+              interests
             </TabsTrigger>
-            <TabsTrigger value="contact" className="">
-              contact
+            <TabsTrigger value="" className="">
+              gaming stuff
             </TabsTrigger>
           </TabsList>
           <TabsContent value="bio">you are on the BIO</TabsContent>
-          <TabsContent value="achievements">
-            you are on the ACHIEVEMENTS
-          </TabsContent>
-          <TabsContent value="contact">you are on the CONTACT</TabsContent>
+          <TabsContent value="interests">h</TabsContent>
+          <TabsContent value="">touhou and tetris smile</TabsContent>
         </Tabs>
       </div>
     </MainLayout>

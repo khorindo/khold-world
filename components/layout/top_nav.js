@@ -9,8 +9,8 @@ export default function TopNav() {
     <nav
       className={`${ubuntubold.className}  bg-zinc-950 border border-black text-zinc-200 text-2xl`}
     >
-      <ul className="flex justify-between text-center ">
-        <li className="flex-1 border-r border-black py-1 px-4 hover:bg-zinc-200 hover:text-zinc-950">
+      <ul className="flex justify-between text-center">
+        <li className="flex-1 border-r border-black py-1 px-4 hover:bg-black hover:bg-zinc-200 hover:text-zinc-950">
           <Link href="/" className="block w-full h-full">
             home
           </Link>

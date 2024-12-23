@@ -20,10 +20,10 @@ export default function Home() {
         <div className="flex flex-wrap gap-4">
           <div className="flex-1 min-w-[200px]">
             <h1
-              className={`${ubuntubold.className} text-3xl text-zinc-50 bg-zinc-950 p-1 rounded-sm`}
+              className={`${ubuntubold.className} text-3xl text-zinc-50 bg-zinc-900 p-1 rounded-sm`}
             >
               it's a khold world...{" "}
-              <span className={`${outfit.className} text-sm`}>
+              <span className={`${outfit.className} text-xs`}>
                 (at least this is.)
               </span>
             </h1>
@@ -31,8 +31,8 @@ export default function Home() {
             <div>
               Welcome to my website!! I'm{" "}
               <span className="font-bold">khold</span>{" "}
-              <span className="italic">(read: "cold")</span> but honestly I hear
-              "kay-hold" just as much and I like it too.
+              <span className="italic">(read: "cold")</span> but I hear
+              "kay-hold" just as much and I like it too tbh.
             </div>
           </div>
           <div className="flex-shrink-0">
