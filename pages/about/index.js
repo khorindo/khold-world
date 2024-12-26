@@ -1,11 +1,13 @@
 // my component imports
 import MainLayout from "@/components/layout/main_layout";
+import Bio from "@/components/about/bio";
 
 // misc
 import { Ubuntu } from "next/font/google";
 import Image from "next/image";
 import Head from "next/head";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Interests from "@/components/about/interests";
 
 const ubuntubold = Ubuntu({ subsets: ["latin"], weight: ["700"] });
 
@@ -22,20 +24,20 @@ export default function About() {
           about me
         </h1>
         <Tabs defaultValue="bio" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 rounded-none rounded-b-sm border-t border-black">
+          <TabsList className="grid w-full grid-cols-2 rounded-none rounded-b-sm border-t border-black">
             <TabsTrigger value="bio" className="">
               bio
             </TabsTrigger>
             <TabsTrigger value="interests" className="">
               interests
             </TabsTrigger>
-            <TabsTrigger value="" className="">
-              gaming stuff
-            </TabsTrigger>
           </TabsList>
-          <TabsContent value="bio">you are on the BIO</TabsContent>
-          <TabsContent value="interests">h</TabsContent>
-          <TabsContent value="">touhou and tetris smile</TabsContent>
+          <TabsContent value="bio">
+            <Bio />
+          </TabsContent>
+          <TabsContent value="interests">
+            <Interests />
+          </TabsContent>
         </Tabs>
       </div>
     </MainLayout>

@@ -27,16 +27,16 @@ export default function HomeAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger className="font-bold">
-          most recent post
-        </AccordionTrigger>
-        <AccordionContent>goes here</AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-4">
         <AccordionTrigger className="font-bold">webrings</AccordionTrigger>
         <AccordionContent>
           <Webrings />
         </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+        <AccordionTrigger className="font-bold">
+          most recent post
+        </AccordionTrigger>
+        <AccordionContent>goes here</AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
         <AccordionTrigger className="font-bold">guestbook</AccordionTrigger>
