@@ -5,8 +5,8 @@ export default function NavLinkAds() {
         <strong className="text-lg">navlink ads</strong>
       </h3>
       <iframe
-        width="200"
-        height="200"
+        width="230"
+        height="230"
         src="https://dimden.neocities.org/navlink/"
         name="neolink"
         className="bg-zinc-50 border-0 m-auto pt-1 border-zinc-600 rounded-sm"

@@ -28,12 +28,11 @@ export default function Home() {
               </span>
             </h1>
             {/* 1st para */}
-            <div className="text-sm">
+            <div className="text-sm mt-1">
               Welcome to my website!! I'm{" "}
               <span className="font-bold">khold</span>{" "}
               <span className="italic">(read: "cold")</span> but I hear
-              "kay-hold" just as much and I like it too tbh. This is where I get
-              to be as /me/ as I want and stunt a bit with webdev.
+              "kay-hold" just as much and I like it too tbh.
             </div>
           </div>
           <div className="flex-shrink-0">
