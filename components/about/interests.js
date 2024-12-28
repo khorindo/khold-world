@@ -116,21 +116,33 @@ export default function Interests() {
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-bold">games</AccordionTrigger>
               <AccordionContent>
-                <div className="mb-2">
-                  The games I'm playing the most right now are (modern) Tetris
-                  and Melee. I play the Touhou games super very casually but
-                  I've grinded out a handful of normal 1CCs over the years. I
-                  also play rhythm games, most notably StepMania and osu! (i fw
-                  all the modes now actually)
+                <div className="flex items-center gap-4">
+                  <div className="flex-1">
+                    <div className="mb-2">
+                      The games I'm playing the most right now are (modern)
+                      Tetris and Melee. I play the Touhou games super very
+                      casually but I've grinded out a handful of normal 1CCs
+                      over the years. I also play rhythm games, most notably
+                      StepMania and osu! (i fw all the modes now actually)
+                    </div>
+                    <div className="mb-2">
+                      YOU SHOULD PLAY TETRIS TOO ITS REALLY FUN SMILE
+                    </div>
+                    <div className="mb-2">
+                      Below are my most recent Tetris 40L and 20L pbs, as well
+                      as my 1cc chart for touhou games:
+                    </div>
+                  </div>
+                  <div className="flex-shrink-0 mb-2">
+                    <Image
+                      src="/images/about/games/size15.gif"
+                      alt="my terrible 20l pb"
+                      width={200}
+                      height={200}
+                      className="rounded-sm"
+                    />
+                  </div>
                 </div>
-                <div className="mb-2">
-                  YOU SHOULD PLAY TETRIS TOO ITS REALLY FUN SMILE
-                </div>
-                <div className="mb-2">
-                  Below are my most recent Tetris 40L and 20L pbs, as well as my
-                  1cc chart for touhou games:
-                </div>
-
                 <Dialog>
                   <DialogTrigger>
                     <Image

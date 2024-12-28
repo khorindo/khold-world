@@ -20,7 +20,7 @@ export default function Bio() {
         </div>
         <div className="px-1">
           Webdev is comfy, and it's what I'd like to do for a living. I also
-          play tetris kind of ok.
+          play tetris somewhat quickly i guess
         </div>
       </div>
       <div className="border border-zinc-950 p-1">
