@@ -20,7 +20,7 @@ export default function TopNav() {
           </Link>
         </li>
         <li className="flex-1  border-l border-black py-1 px-4 hover:bg-zinc-200 hover:text-zinc-950">
-          <Link href="#" className="block w-full h-full">
+          <Link href="/blog" className="block w-full h-full">
             blog
           </Link>
         </li>
