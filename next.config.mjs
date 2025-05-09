@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "lastfm.freetls.fastly.net" },
+      { protocol: "http", hostname: "localhost" },
     ],
   },
 };

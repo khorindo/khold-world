@@ -2,17 +2,18 @@ import { useParams } from "next/navigation";
 import { getSinglePost, getBlogPosts } from "@/lib/blog/GetBlogPosts";
 import MainLayout from "@/components/layout/main_layout";
 import Head from "next/head";
+import Image from "next/image";
 
-// PostPage page component
-const PostPage = (props) => {
-  // Render post title and content in the page from props
-  return (
-    <div>
-      <h1>{props.post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
-    </div>
-  );
-};
+// // PostPage page component
+// const PostPage = (props) => {
+//   // Render post title and content in the page from props
+//   return (
+//     <div>
+//       <h1>{props.post.title}</h1>
+//       <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
+//     </div>
+//   );
+// };
 
 export async function getStaticPaths() {
   const posts = await getBlogPosts();
@@ -46,7 +47,7 @@ export default function BlogPost({ post }) {
   return (
     <MainLayout>
       <Head>
-        <title>{post.title} @ khold.world</title>
+        <title>{post.title}</title>
       </Head>
       <article className="bg-zinc-50 border border-black p-2.5 my-3 mr-2 text-zinc-800 rounded-sm">
         <header className="mb-4">
@@ -54,6 +55,17 @@ export default function BlogPost({ post }) {
           <time className="text-sm text-zinc-600">
             {new Date(post.published_at).toLocaleDateString()}
           </time>
+          <div className="">
+            {post.feature_image && (
+              <Image
+                src={post.feature_image}
+                alt={post.title}
+                width={900}
+                height={500}
+                className="rounded-sm mt-2"
+              />
+            )}
+          </div>
         </header>
         <div
           className="prose prose-zinc max-w-none  
