@@ -15,21 +15,35 @@ import Image from "next/image";
 //   );
 // };
 
-export async function getStaticPaths() {
-  const posts = await getBlogPosts();
+// export async function getStaticPaths() {
+//   const posts = await getBlogPosts();
 
-  // Get the paths we want to create based on posts
-  const paths = posts.map((post) => ({
-    params: { slug: post.slug },
-  }));
+//   // Get the paths we want to create based on posts
+//   const paths = posts.map((post) => ({
+//     params: { slug: post.slug },
+//   }));
 
-  // { fallback: false } means posts not found should 404.
-  return { paths, fallback: false };
-}
+//   // { fallback: false } means posts not found should 404.
+//   return { paths, fallback: false };
+// }
 
-// Pass the page slug over to the "getSinglePost" function
-// In turn passing it to the posts.read() to query the Ghost Content API
-export async function getStaticProps(context) {
+// // Pass the page slug over to the "getSinglePost" function
+// // In turn passing it to the posts.read() to query the Ghost Content API
+// export async function getStaticProps(context) {
+//   const post = await getSinglePost(context.params.slug);
+
+//   if (!post) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+
+//   return {
+//     props: { post },
+//   };
+// }
+
+export async function getServerSideProps(context) {
   const post = await getSinglePost(context.params.slug);
 
   if (!post) {
