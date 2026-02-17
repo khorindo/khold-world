@@ -64,7 +64,7 @@ export default function BlogPost({ post }) {
         <title>{post.title}</title>
       </Head>
       <article className="bg-zinc-50 border border-black p-2.5 my-3 mr-2 text-zinc-800 rounded-sm">
-        <header className="mb-4">
+        <header className="mb-4 p-2.5">
           <h1 className="text-3xl font-bold">{post.title}</h1>
           <time className="text-sm text-zinc-600">
             {new Date(post.published_at).toLocaleDateString()}
@@ -84,7 +84,9 @@ export default function BlogPost({ post }) {
         <div
           className="prose prose-zinc max-w-none  
           prose-img:rounded-sm 
-          prose-img:mx-auto"
+          prose-img:mx-auto
+          p-2.5
+          leading-6"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </article>
