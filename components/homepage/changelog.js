@@ -3,6 +3,15 @@ export default function Changelog() {
   return (
     <ScrollArea>
       <div>
+        <h3 className="text-lg font-bold">version 0.3.0</h3>
+        <div>
+          Folks we finished the blog functionality. I'd say this is the primary
+          reason I wanted to have a website in the first place tbh and it was a
+          nice excuse for me to try using a headless CMS instead of building my
+          own like in school (oh my god bruh) There's a link to the latest blog
+          post right below this dropdown item, and you can find a full listing
+          of posts in the top bar.
+        </div>
         <h3 className="text-lg font-bold">version 0.2.0</h3>
         <div>
           Finally finished the about page!! It's got a nice tab system courtesy
