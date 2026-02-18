@@ -1,6 +1,7 @@
 // my component imports
 import MainLayout from "@/components/layout/main_layout";
 import HomeAccordion from "@/components/homepage/home_accordion";
+import { getLatestPost } from "@/lib/blog/GetBlogPosts";
 
 // misc
 import { Ubuntu, Outfit } from "next/font/google";
@@ -9,7 +10,17 @@ import Head from "next/head";
 
 const ubuntubold = Ubuntu({ subsets: ["latin"], weight: ["700"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
-export default function Home() {
+
+// for accordion, fetch latest blog post
+export async function getServerSideProps() {
+  const latestPost = await getLatestPost();
+
+  return {
+    props: { latestPost },
+  };
+}
+
+export default function Home({ latestPost }) {
   return (
     <MainLayout>
       <Head>
@@ -56,7 +67,7 @@ export default function Home() {
         <div className="text-sm ">please watch warmly!!!</div>
 
         {/* the accordion is nicer */}
-        <HomeAccordion />
+        <HomeAccordion latestPost={latestPost} />
       </div>
     </MainLayout>
   );

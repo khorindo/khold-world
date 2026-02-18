@@ -10,8 +10,9 @@ import {
 import LinkBox from "./linkbox";
 import Changelog from "./changelog";
 import Webrings from "./webrings";
+import RecentPost from "./recentpost";
 
-export default function HomeAccordion() {
+export default function HomeAccordion({ latestPost }) {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
@@ -36,7 +37,9 @@ export default function HomeAccordion() {
         <AccordionTrigger className="font-bold">
           most recent post
         </AccordionTrigger>
-        <AccordionContent>goes here</AccordionContent>
+        <AccordionContent>
+          <RecentPost post={latestPost} />
+        </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-5">
         <AccordionTrigger className="font-bold">guestbook</AccordionTrigger>
