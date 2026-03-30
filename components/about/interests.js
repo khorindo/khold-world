@@ -44,16 +44,16 @@ export default function Interests() {
                 <Dialog>
                   <DialogTrigger>
                     <Image
-                      src="/images/about/music/chart.png"
+                      src="/images/about/music/chart2026.png"
                       alt="bad topster with 1x album from many artists i like"
                       width={700}
                       height={700}
-                      className="cursor-pointer"
+                      className="cursor-pointer border border-zinc-600 rounded-sm"
                     />
                   </DialogTrigger>
                   <DialogContent className="max-w-7xl bg-zinc-950">
                     <Image
-                      src="/images/about/music/chart.png"
+                      src="/images/about/music/chart2026.png"
                       alt="bad topster with 1x album from many artists i like"
                       width={1600}
                       height={1600}
