@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "lastfm.freetls.fastly.net" },
+      { protocol: "https", hostname: "lastfm-img.freetls.fastly.net" },
       { protocol: "http", hostname: "localhost" },
     ],
   },
